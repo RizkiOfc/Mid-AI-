@@ -33,9 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     clearResponseBtn.addEventListener('click', function() {
         responseDiv.innerHTML = `
             <div class="placeholder-text">
-                <p>Wilujeng sumping! Abdi MidAI, asisten AI anjeun.</p>
-                <p>Mangga tanyakeun patarosan naon bae dina basa Indonesia atawa Sunda, abdi bakal bungah pisan ngabantos anjeun!</p>
-                <p class="sunda-hint">*Sadaya jawaban bakal dina basa Sunda</p>
+                <p>Responded...</p>
             </div>
         `;
         responseStats.innerHTML = '';
@@ -135,3 +133,4 @@ document.addEventListener('DOMContentLoaded', function() {
     promptInput.focus();
 
 });
+
