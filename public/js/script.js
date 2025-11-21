@@ -86,7 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (data.success) {
                 responseDiv.textContent = data.response;
                 addResponseStats(data.response);
-                showMessage(errorMessage, 'MidAI geus ngabales dina basa Sunda!', 'success');
             } else {
                 throw new Error('Gagal meunang jawaban ti AI');
             }
@@ -134,4 +133,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     promptInput.focus();
+
 });
