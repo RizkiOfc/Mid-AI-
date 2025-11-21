@@ -1,0 +1,104 @@
+<%- include('partials/header') %>
+
+<div class="container">
+    <header>
+        <h1>MidAI</h1>
+        <p class="subtitle">Asisten AI Nyunda - Mangga Tanyakeun Naon Bae</p>
+    </header>
+
+    <section class="info-section">
+        <div class="info-card">
+            <h3>Tanya Naon Bae</h3>
+            <p>Tanyakeun patarosan dina basa Indonesia atawa Sunda</p>
+        </div>
+        <div class="info-card">
+            <h3>Jawaban Basa Sunda</h3>
+            <p>MidAI bakal ngabales make basa Sunda sakumaha anjeun</p>
+        </div>
+    </section>
+
+    <section class="language-info">
+        <div class="language-notice">
+            <strong>Peringet:</strong> Sakumna jawaban ti MidAI bakal dina <span class="sunda-text">basa Sunda</span>, 
+            najan anjeun nanya make basa Indonesia. Mangga enjoy!
+        </div>
+    </section>
+
+    <section class="prompt-section">
+        <h2>Patarosan pikeun MidAI</h2>
+        <textarea id="promptInput" placeholder="Ketikkeun patarosan atawa parentah di dieu... Contona: 'Jelaskeun ngeunaan artificial intelligence' atawa 'Naon eta machine learning?'"></textarea>
+        <div class="char-count" id="charCount">0 aksara</div>
+        
+        <div class="loading" id="loadingIndicator">
+            <div class="spinner"></div>
+            <p>MidAI keur mikirkeun jawaban anu pangsaena...</p>
+        </div>
+        
+        <button id="submitPrompt">
+            <span class="button-text">Kirim ka MidAI</span>
+            <span class="shortcut-hint">(Ctrl + Enter)</span>
+        </button>
+    </section>
+
+    <section class="response-section">
+        <div class="section-header">
+            <h2>Jawaban ti MidAI <span class="language-badge">SUNDA</span></h2>
+            <button id="clearResponse" class="clear-btn">Pupus</button>
+        </div>
+        <div id="response" class="response-content">
+            <div class="placeholder-text">
+                <p>Wilujeng sumping! Abdi MidAI, asisten AI anjeun.</p>
+                <p>Mangga tanyakeun patarosan naon bae dina basa Indonesia atawa Sunda, abdi bakal bungah pisan ngabantos anjeun!</p>
+                <p class="sunda-hint">*Sadaya jawaban bakal dina basa Sunda</p>
+            </div>
+        </div>
+        <div id="errorMessage" class="error"></div>
+        <div id="responseStats" class="response-stats"></div>
+    </section>
+
+    <section class="examples-section">
+        <h3>Conto Patarosan:</h3>
+        <div class="example-chips">
+            <div class="example-chip" data-prompt="Jelaskan apa itu artificial intelligence">AI</div>
+            <div class="example-chip" data-prompt="Buatkan rencana diet sehat untuk seminggu">Rencana Diet</div>
+            <div class="example-chip" data-prompt="Jelaskan cara kerja blockchain">Blockchain</div>
+            <div class="example-chip" data-prompt="Siapa presiden pertama Indonesia">Presiden Pertama</div>
+            <div class="example-chip" data-prompt="Apa itu budaya Sunda">Budaya Sunda</div>
+            <div class="example-chip" data-prompt="Bagaimana cara membuat website">Cara Bikin Website</div>
+        </div>
+    </section>
+
+    <section class="sunda-phrases">
+        <h3>Sababaraha Frase Basa Sunda:</h3>
+        <div class="phrases-grid">
+            <div class="phrase-card">
+                <div class="phrase">Hatur nuhun</div>
+                <div class="meaning">Terima kasih</div>
+            </div>
+            <div class="phrase-card">
+                <div class="phrase">Mangga</div>
+                <div class="meaning">Silakan</div>
+            </div>
+            <div class="phrase-card">
+                <div class="phrase">Punten</div>
+                <div class="meaning">Permisi/Maaf</div>
+            </div>
+            <div class="phrase-card">
+                <div class="phrase">Kumaha damang?</div>
+                <div class="meaning">Apa kabar?</div>
+            </div>
+            <div class="phrase-card">
+                <div class="phrase">Nuhun pisan</div>
+                <div class="meaning">Terima kasih banyak</div>
+            </div>
+            <div class="phrase-card">
+                <div class="phrase">Wilujeng sumping</div>
+                <div class="meaning">Selamat datang</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<%- include('partials/footer') %>
+
+<script src="/js/script.js"></script>
