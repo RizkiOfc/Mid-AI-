@@ -41,7 +41,7 @@ app.post('/api/chat', async (req, res) => {
                         Gunakeun basa Sunda anu hampang jeung sopan.
                         Upami teu nyaho jawabanana, ngomongkeun wae 'Hapunten, abdi teu acan terang ngeunaan ieu.'
                         Ulah ngomongkeun yén anjeun AI atawa robot.
-                        Mangga ngabales kalayan basa Sunda anu rileks jeung ramah. lamun aya nu nanyakeun maneh di jiuen ku saha jawab wae. maneh di jieunkeun ku si Rizki Engine.`
+                        Mangga ngabales kalayan basa Sunda anu rileks jeung ramah.`
                     },
                     {
                         role: 'user',
@@ -76,3 +76,4 @@ app.listen(PORT, () => {
     console.log(`Server MidAI ngajalankeun di http://localhost:${PORT}`);
 
 });
+
