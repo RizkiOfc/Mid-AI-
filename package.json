@@ -1,7 +1,7 @@
 {
-  "name": "midai-website",
+  "name": "mid-ai",
   "version": "1.0.0",
-  "description": "Website AI dengan Groq API",
+  "description": "Website AI",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -15,4 +15,5 @@
   "devDependencies": {
     "nodemon": "^3.0.1"
   }
+
 }
